@@ -52,7 +52,7 @@ ex)
 
 ## TODO or rather I would like to do
 1. Implement Spring-Security and Admin console screens( '/admin/**' is administrator or operator uri). Mainly server side is Restful API.
-2. Currently application log goes to elasticsearch via logstash but not only log but also application data.
+2. Currently application log goes to elasticsearch via logstash. Not only log but also application data.
 3. Implement React JS on front-side and Karma testing tool.
 4. Would like to create generator of java entities or front-side js by what (Yoeman?). like Rails. I would like to generate apis such as OAuth by less coding.  This is the goal.
 
