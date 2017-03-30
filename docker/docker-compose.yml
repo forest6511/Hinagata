@@ -1,0 +1,58 @@
+version: '2'
+
+services:
+  mysql:
+    build: mysql/
+    ports:
+    - "3306:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: pass
+    volumes:
+      - ./db:/var/lib/mysql
+    networks:
+      - hinagata_develop_network
+  elasticsearch:
+    build: elasticsearch/
+    hostname: "elasticsearch"
+    ports:
+      - "9200:9200"
+      # transports
+      - "9300:9300"
+    environment:
+      ES_JAVA_OPTS: "-Xms1g -Xmx1g"
+    volumes:
+      - ./elasticsearch/data:/data
+    networks:
+      - hinagata_develop_network
+  logstash:
+    build: logstash/
+    # https://www.elastic.co/guide/en/logstash/current/pipeline.html
+    # https://www.elastic.co/guide/en/logstash/current/logstash-settings-file.html
+    ports:
+      - "5044:5044"
+    networks:
+      - hinagata_develop_network
+    depends_on:
+      - elasticsearch
+  kibana:
+    build: kibana/
+    # https://www.elastic.co/guide/en/kibana/4.5/kibana-server-properties.html
+    ports:
+      - "5601:5601"
+    networks:
+      - hinagata_develop_network
+    depends_on:
+      - elasticsearch
+  redis:
+    image: redis
+    volumes:
+      - ./redis:/data
+    ports:
+      - "6379:6379"
+    networks:
+      - hinagata_develop_network
+    command: redis-server --appendonly yes
+
+networks:
+  hinagata_develop_network:
+    driver: bridge

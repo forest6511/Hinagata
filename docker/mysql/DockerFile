@@ -1,0 +1,4 @@
+FROM mysql:5.7
+
+COPY ./config/my.cnf /etc/mysql/conf.d/
+COPY ./config/prepare.sql /docker-entrypoint-initdb.d/prepare.sql

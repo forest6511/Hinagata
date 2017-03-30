@@ -1,0 +1,56 @@
+######################
+# Main
+######################
+/target/**
+
+######################
+# Data for DB and Redis
+######################
+/data
+/docker/db/**
+/docker/redis/**
+/docker/elasticsearch/data/data/**
+!.gitkeep
+
+######################
+# Node
+######################
+node/
+node_tmp/
+node_modules/
+
+######################
+# Intellij
+######################
+.idea/
+*.iml
+
+######################
+# Maven
+######################
+docker/elasticsearch/data/log/
+target/
+
+######################
+# Package Files
+######################
+*.jar
+*.war
+*.ear
+*.db
+
+######################
+# Mac OSX
+######################
+.DS_Store
+
+######################
+# Logs
+######################
+*.log
+
+######################
+# My tools
+######################
+/rebuild_docker.sh
+
