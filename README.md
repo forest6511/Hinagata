@@ -27,7 +27,7 @@ mvn spring-boot:run -Drun.profiles=dev
 
 ### Unite Testing (Server)
 ```    
-mvn test
+mvn clean test
 ```
 
 ### Kibana

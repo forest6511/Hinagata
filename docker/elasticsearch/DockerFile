@@ -5,5 +5,3 @@ ENV ES_JAVA_OPTS="-Des.path.conf=/etc/elasticsearch"
 # Japanese analyzer such as MeCab.
 # http://www.atilika.com/ja/products/kuromoji.html
 RUN elasticsearch-plugin install analysis-kuromoji
-
-CMD ["-E", "path.data=/data/data"]

@@ -9,7 +9,7 @@
 /data
 /docker/db/**
 /docker/redis/**
-/docker/elasticsearch/data/data/**
+/docker/elasticsearch/data/**
 !.gitkeep
 
 ######################

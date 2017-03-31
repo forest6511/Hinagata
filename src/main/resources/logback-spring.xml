@@ -17,7 +17,8 @@
     </springProfile>
 
     <springProfile name="dev">
-        <root level="DEBUG">
+        <logger name="com.zaxxer.hikari.HikariDataSource" level="DEBUG"/>
+        <root level="INFO">
             <appender-ref ref="CONSOLE"/>
             <appender-ref ref="LOGSTASH"/>
         </root>

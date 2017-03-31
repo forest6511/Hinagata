@@ -30,7 +30,7 @@ spring:
         host: ${REDIS_PORT_6379_TCP_ADDR:localhost}
         port: ${REDIS_PORT_6379_TCP_PORT:6379}
 
-security
+security:
     basic:
         enabled: false
 

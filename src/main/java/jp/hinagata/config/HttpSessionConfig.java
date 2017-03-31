@@ -1,4 +1,4 @@
-package jp.hinagata.jp.hinagata.config;
+package jp.hinagata.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
