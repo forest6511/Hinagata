@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>jp.forest</groupId>
-    <artifactId>spring_boot_sample</artifactId>
+    <artifactId>hinagata</artifactId>
     <packaging>jar</packaging>
     <version>1.0.0-SNAPSHOT</version>
     <name>spring_boot_sample</name>
@@ -16,12 +16,12 @@
     </parent>
 
     <properties>
-        <javax.inject.version>1</javax.inject.version>
         <java.version>1.8</java.version>
         <maven.compiler.source>${java.version}</maven.compiler.source>
         <maven.compiler.target>${java.version}</maven.compiler.target>
         <lombok.version>1.16.4</lombok.version>
         <swagger.version>2.6.1</swagger.version>
+        <logstash.logback.version>4.9</logstash.logback.version>
         <log4jdbc.log4j2.version>1.16</log4jdbc.log4j2.version>
     </properties>
 
@@ -122,7 +122,21 @@
         <dependency>
             <groupId>net.logstash.logback</groupId>
             <artifactId>logstash-logback-encoder</artifactId>
-            <version>4.9</version>
+            <version>${logstash.logback.version}</version>
+        </dependency>
+
+        <!-- Add twitter4j-core -->
+        <dependency>
+            <groupId>org.twitter4j</groupId>
+            <artifactId>twitter4j-core</artifactId>
+            <version>4.0.6</version>
+        </dependency>
+
+        <!-- Add twitter4j-stream -->
+        <dependency>
+            <groupId>org.twitter4j</groupId>
+            <artifactId>twitter4j-stream</artifactId>
+            <version>4.0.6</version>
         </dependency>
 
         <!-- Add Testing tool -->

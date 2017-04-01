@@ -11,7 +11,7 @@ Currently this project is self-study about Spring Boot.
 docker-compose up
 ```
 
-|Middleware Name|Ports|User/Pass|Description|
+|Middleware|Ports|User/Pass|Description|
 |---|---|---|---|
 |MySQL 5.7|3306|root/pass|-|
 |Redis|6379|NA|-|
