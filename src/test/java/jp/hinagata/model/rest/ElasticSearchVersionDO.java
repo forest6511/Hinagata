@@ -7,6 +7,11 @@ import lombok.Data;
 @Data
 public class ElasticSearchVersionDO {
 
+    private String versionNumber;
+    private String buildDate;
+    private String buildHash;
+    private boolean buildSnapshot;
+    private String luceneVersion;
     @JsonCreator
     public ElasticSearchVersionDO(@JsonProperty("number") String versionNumber,
                                   @JsonProperty("build_date") String buildDate,
@@ -19,10 +24,4 @@ public class ElasticSearchVersionDO {
         this.buildSnapshot = buildSnapshot;
         this.luceneVersion = luceneVersion;
     }
-
-    private String versionNumber;
-    private String buildDate;
-    private String buildHash;
-    private boolean buildSnapshot;
-    private String luceneVersion;
 }

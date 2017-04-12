@@ -1,16 +1,12 @@
 package jp.hinagata.web.api;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import jp.hinagata.ApplicationTest;
+import jp.hinagata.BaseTest;
 import jp.hinagata.model.rest.SessionSample;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.Before;
 import org.junit.Test;
-import org.junit.runner.RunWith;
-import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.mock.web.MockHttpSession;
-import org.springframework.test.context.ActiveProfiles;
-import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.MvcResult;
 import org.springframework.test.web.servlet.setup.MockMvcBuilders;
@@ -24,10 +20,7 @@ import static org.springframework.test.web.servlet.request.MockMvcRequestBuilder
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
 @Slf4j
-@RunWith(SpringRunner.class)
-@SpringBootTest(classes = ApplicationTest.class)
-@ActiveProfiles("test")
-public class SessionSampleControllerTest {
+public class SessionSampleControllerTest extends BaseTest {
 
     private MockMvc mockMvc;
     private MockHttpSession session;
