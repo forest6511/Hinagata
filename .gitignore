@@ -55,3 +55,4 @@ target/
 /rebuild_docker.sh
 /setenv.sh
 
+src/test/resources/

@@ -34,9 +34,13 @@ mvn clean test
 
 http://localhost:5601/
 
-Show all index
+confirm index,mapping
 ```    
 GET _cat/indices?v
+GET /logstash-*
+GET /_mapping
+GET /logstash-*/_mapping
+
 ```
 
 Create index of 'logstash-*' by default on Kibana.
