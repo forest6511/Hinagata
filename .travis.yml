@@ -15,9 +15,12 @@ cache:
   directories:
     - $HOME/.m2
 before_install:
+  -  chmod +x ./scripts/*
+  - ./script/travis_mysql_5.7.sh
+  - ./script/mysql-reset-root-password.sh
   - mysql -e 'CREATE DATABASE IF NOT EXISTS spring_test;'
 before_script:
-  - echo "USE mysql;\nUPDATE user SET password=PASSWORD('pass') WHERE user='root';\nFLUSH PRIVILEGES;\n" | mysql -u root
+  #- echo "USE mysql;\nUPDATE user SET password=PASSWORD('pass') WHERE user='root';\nFLUSH PRIVILEGES;\n" | mysql -u root
   - sleep 10
 script:
   - wget -q --waitretry=1 --retry-connrefused -T 10 -O - http://127.0.0.1:9200
