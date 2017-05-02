@@ -27,6 +27,9 @@ public class CompanyServiceTest extends BaseTest {
         String address = "hinagata-hill 6511 NY";
         long id = sampleService.saveCompany(name, zip, address);
 
+        // Keep testing data on CI?
+        log.info("COMP ID = [{}]", id);
+
         Optional<CompanyEntity> entity = Optional.ofNullable(companyRepository.findOne(id));
         assertThat(true, is(entity.isPresent()));
         assertThat(name, is(entity.get().getName()));
