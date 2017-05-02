@@ -8,7 +8,7 @@
         <encoder class="net.logstash.logback.encoder.LogstashEncoder"/>
     </appender>
 
-    <!-- hibanete log (show-sql,format_sql) is aplication-xxx.yml -->
+    <!-- hibanete log (show-sql,format_sql) is application-xxx.yml -->
     <springProfile name="test">
         <logger name="com.zaxxer.hikari.HikariDataSource" level="DEBUG"/>
         <logger name="jp.hinagata" level="DEBUG"/>

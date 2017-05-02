@@ -11,8 +11,8 @@ CREATE TABLE users (
   `email`          VARCHAR(256),
   `password`       VARCHAR(256),
   `version`    INTEGER,
-  `created_at` TIMESTAMP NOT NULL,
-  `updated_at` TIMESTAMP NOT NULL,
+  `created_at` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `updated_at` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
    PRIMARY KEY (`id`),
    UNIQUE INDEX `users_email_UNIQUE` (`email` ASC)
 );
@@ -33,8 +33,8 @@ CREATE TABLE companies (
   `zip`       VARCHAR(32),
   `address`   VARCHAR(255),
   `version`   INTEGER,
-  `created_at` TIMESTAMP NOT NULL,
-  `updated_at` TIMESTAMP NOT NULL,
+  `created_at` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `updated_at` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
    PRIMARY KEY (`id`)
 );
 
@@ -43,7 +43,7 @@ CREATE TABLE departments (
   `company_id` BIGINT NOT NULL,
   `name`       VARCHAR(128),
   `version`    INTEGER,
-  `created_at` TIMESTAMP NOT NULL,
-  `updated_at` TIMESTAMP NOT NULL,
+  `created_at` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `updated_at` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
    PRIMARY KEY (`id`)
 );
