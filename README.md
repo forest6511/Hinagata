@@ -1,4 +1,5 @@
 # Hinagata
+[![Build Status](https://travis-ci.org/forest6511/Hinagata.svg?branch=master)](https://travis-ci.org/forest6511/Hinagata.svg?branch=master)
 
 Currently this project is self-study about Spring Boot.
 

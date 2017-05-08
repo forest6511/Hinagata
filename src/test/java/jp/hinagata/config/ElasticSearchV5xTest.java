@@ -6,6 +6,7 @@ import org.junit.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.autoconfigure.json.JsonTest;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.client.RestTemplate;
 
@@ -13,8 +14,6 @@ import static org.hamcrest.CoreMatchers.is;
 import static org.junit.Assert.assertThat;
 
 public class ElasticSearchV5xTest extends BaseTest {
-
-    private static final Logger logger = LoggerFactory.getLogger(ElasticSearchV5xTest.class);
 
     @Autowired
     private RestTemplate restTemplate;
