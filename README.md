@@ -1,6 +1,6 @@
 # Hinagata
 [![Build Status](https://travis-ci.org/forest6511/Hinagata.svg?branch=master)](https://travis-ci.org/forest6511/Hinagata.svg?branch=master)
-
+[![Coverage Status](https://coveralls.io/repos/github/forest6511/Hinagata/badge.svg?branch=master)](https://coveralls.io/github/forest6511/Hinagata?branch=master)  
 Currently this project is self-study about Spring Boot.
 
 ## Development
