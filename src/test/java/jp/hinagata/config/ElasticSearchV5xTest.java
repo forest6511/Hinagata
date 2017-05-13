@@ -3,10 +3,7 @@ package jp.hinagata.config;
 import jp.hinagata.BaseTest;
 import jp.hinagata.model.rest.ElasticSearchInfoDO;
 import org.junit.Test;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.test.autoconfigure.json.JsonTest;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.client.RestTemplate;
 

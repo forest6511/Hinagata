@@ -21,7 +21,7 @@ public class MethodInterceptor {
     }
 
     @Around("methodPointcutTarget()")
-    public Object MethodLog(ProceedingJoinPoint joinPoint) throws Throwable {
+    public Object methodLog(ProceedingJoinPoint joinPoint) throws Throwable {
         StopWatch stopWatch = new StopWatch();
 
         // Starting time.

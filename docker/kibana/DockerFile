@@ -1,1 +1,2 @@
+MAINTAINER forest6511
 FROM kibana:5.2

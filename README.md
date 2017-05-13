@@ -1,6 +1,7 @@
 # Hinagata
 [![Build Status](https://travis-ci.org/forest6511/Hinagata.svg?branch=master)](https://travis-ci.org/forest6511/Hinagata.svg?branch=master)
-[![Coverage Status](https://coveralls.io/repos/github/forest6511/Hinagata/badge.svg?branch=master)](https://coveralls.io/github/forest6511/Hinagata?branch=master)  
+[![Coverage Status](https://coveralls.io/repos/github/forest6511/Hinagata/badge.svg?branch=master)](https://coveralls.io/github/forest6511/Hinagata?branch=master) 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/f393ebc0d000419097dcb9bc3af6d8d7)](https://www.codacy.com/app/forest6511/Hinagata?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=forest6511/Hinagata&amp;utm_campaign=Badge_Grade)  
 Currently this project is self-study about Spring Boot.
 
 ## Development
