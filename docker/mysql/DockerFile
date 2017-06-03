@@ -1,5 +1,5 @@
-MAINTAINER forest6511
 FROM mysql:5.7
+MAINTAINER forest6511
 
 COPY ./config/my.cnf /etc/mysql/conf.d/
 COPY ./config/prepare.sql /docker-entrypoint-initdb.d/prepare.sql

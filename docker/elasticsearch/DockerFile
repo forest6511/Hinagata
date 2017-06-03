@@ -1,8 +1,11 @@
+FROM docker.elastic.co/elasticsearch/elasticsearch:5.2.2
 MAINTAINER forest6511
-FROM elasticsearch:5.2.2
 
 ENV ES_JAVA_OPTS="-Des.path.conf=/etc/elasticsearch"
 
 # Japanese analyzer such as MeCab.
 # http://www.atilika.com/ja/products/kuromoji.html
 RUN elasticsearch-plugin install analysis-kuromoji
+
+# neologd
+RUN elasticsearch-plugin install org.codelibs:elasticsearch-analysis-kuromoji-neologd:5.2.1
